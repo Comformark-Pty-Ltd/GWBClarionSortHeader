@@ -1,0 +1,55 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1326F6E0-4064-4755-89B0-BA6574845DC4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GWBSortHeaderClarion</RootNamespace>
+    <AssemblyName>GWBSortHeaderClarion</AssemblyName>
+    <OutputName>GWBSortHeaderClarion</OutputName>
+    <CWOutputType>Exe</CWOutputType>
+    <DefineConstants>_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+  </PropertyGroup>
+  <ItemGroup>
+    <FileDriver Include="SQLite" />
+    <Compile Include="GWBSortHeaderClarion.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="GWBSortHeaderClarion001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="GWBSortHeaderClarion002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="GWBSortHeaderClarion004.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="GWBSo_RD.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="GWBSo_RU.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="GWBSo_SF.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ResCode.Clw">
+      <Generated>true</Generated>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>
