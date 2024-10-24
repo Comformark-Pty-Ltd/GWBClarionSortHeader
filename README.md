@@ -9,7 +9,7 @@
  There is a supplied exe with the template in place 
  so you can see how it works without going any further.
  
- ![Screenshot of GWB Sort Header Clarion template in action.](../blob/main/Template/demo.png)
+ ![Screenshot of GWB Sort Header Clarion template in action.](../main/Template/demo.png)
  
  ## Instructions
 1. Register the template GWBSortHeaderClarion.tpl 
